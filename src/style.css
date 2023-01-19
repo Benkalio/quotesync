@@ -1,5 +1,5 @@
 html {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', 'Lato', Arial, sans-serif;
   text-align: center;
   background-color: rgb(10, 68, 129);
 }
@@ -13,12 +13,25 @@ section {
   margin-top: 100px;
   display: grid;
   place-items: center;
-  border: 2px solid gray;
   padding: 20px 10px;
   background-color: azure;
+  box-shadow: 4px 6px 15px -3px rgba(0,0,0,0.6);
 }
 
 h1 {
   font-size: 2rem;
   color: rgb(214, 214, 247);
+}
+
+h3 {
+}
+
+button {
+  border: 1px solid rgb(48, 79, 166);
+  box-shadow: inset;
+}
+
+button:hover {
+  background-color: rgb(63, 63, 243);
+  color: #fff;
 }

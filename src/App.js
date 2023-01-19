@@ -33,6 +33,7 @@ function App() {
         <h3>
           <span>"</span>
           {quote?.text}
+          <span>"</span>
         </h3>
         <i>~ {quote?.author}</i>
       </section>
