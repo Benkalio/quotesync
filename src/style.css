@@ -8,3 +8,17 @@ main {
   max-width: 500px;
   margin: 0 auto;
 }
+
+section {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  border: 2px solid gray;
+  padding: 20px 10px;
+  background-color: azure;
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(214, 214, 247);
+}
