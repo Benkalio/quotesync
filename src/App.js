@@ -27,7 +27,7 @@ function App() {
 
   return (
     <main>
-      <h1>Sync Random Quotes</h1>
+      <h1>Random Quotes</h1>
       <section>
         <button onClick={requestNewQuote}>New Quote</button>
         <h3>
