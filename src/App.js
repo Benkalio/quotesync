@@ -9,28 +9,16 @@ function App() {
   const [quotes, setQuotes] = useState([]);
   const [quote, setQuote] = useState(null);
 
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '9a07fdb718mshfca4d8048eb8a20p1bc3d3jsn40593d32b9c1',
-      'X-RapidAPI-Host': 'healthruwords.p.rapidapi.com'
-    }
-  };
-
   // const zen_url = 'https://zenquotes.io/api/quotes/';
   const fit_url = "https://type.fit/api/quotes";
 
   useEffect(() => { 
-    // fetch(fit_url)
-    //   .then((res) => res.json())
-    //   .then((json) => {
-    //     setQuotes(json);
-    //     setQuote(json[0]);
-    //   });
-    fetch('https://healthruwords.p.rapidapi.com/v1/quotes/?t=Wisdom&maxR=1&size=medium&id=731', options)
-      .then(response => response.json())
-      .then(response => console.log(response))
-      .catch(err => console.error(err));
+    fetch(fit_url)
+      .then((res) => res.json())
+      .then((json) => {
+        setQuotes(json);
+        setQuote(json[0]);
+      });
   }, []);
 
   function requestNewQuote() {
